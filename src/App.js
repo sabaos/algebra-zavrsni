@@ -1,6 +1,7 @@
 import './App.css';
 import Messages from './components/Messages';
 import React from 'react';
+import Input from './components/Input';
 
 function randomName() {
  const adjectives = ["autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark", "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter", "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue", "billowing", "broken", "cold", "damp", "falling", "frosty", "green", "long", "late", "lingering", "bold", "little", "morning", "muddy", "old", "red", "rough", "still", "small", "sparkling", "throbbing", "shy", "wandering", "withered", "wild", "black", "young", "holy", "solitary", "fragrant", "aged", "snowy", "proud", "floral", "restless", "divine", "polished", "ancient", "purple", "lively", "nameless"];
@@ -15,6 +16,7 @@ function randomColor() {
 }
 class App extends React.Component {
 
+  
 
   state = {
     messages: [
@@ -32,17 +34,33 @@ class App extends React.Component {
     }
   }
 
+  onSendMessage = (message) => {
+    const messages = this.state.messages
+    messages.push({
+      text: message,
+      member: this.state.member
+    })
+    this.setState({messages: messages})
+  }
+
   render(){
     
     return (
       <div className="App">
-      <Messages
-        messages={this.state.messages}
-        currentMember={this.state.member}
-      />
-    </div>
+        <div className="App-header">
+        <h1>Algebra super chat</h1>
+      </div>
+        <Messages
+          messages={this.state.messages}
+          currentMember={this.state.member}
+        />
+        <Input
+          onSendMessage={this.onSendMessage}
+        />
+      </div>
     );
   }
+
 }
 
 export default App;
