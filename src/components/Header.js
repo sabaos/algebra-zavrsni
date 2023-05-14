@@ -7,13 +7,14 @@ const Header = (props) =>{
         {isLoggedIn && 
         <div className="App-header">
         <button className='sidebar-btn' onClick={props.toggleSidebar}>Izbornik</button>
-        <h1>{props.username}'s Chat Room</h1>
+        <h1>{props.username}'s Chatty</h1>
         <button onClick={props.handleLogout}>Logout</button>
       </div>}
 
       {!isLoggedIn &&  <div className="App-header">
         <div></div>
-        <h1>Chat Application</h1>
+        <img src="src/components/img/chatty_icon.svg" alt="logo"></img>
+        <h1>Chatty</h1>
         {/* Prazan div služi za flex pozicioniranje elemenata */}
         <div></div>
       </div>}
