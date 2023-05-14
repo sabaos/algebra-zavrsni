@@ -29,7 +29,7 @@ class Input extends Component {
             // bilo autofocus="true"
             autoFocus={true}
           />
-          <button>Send</button>
+          <button className="btn-send">Send</button>
         </form>
       </div>
     );
