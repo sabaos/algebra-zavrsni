@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/algebra-zavrsni/static/css/main.32f3f9d4.css",
+    "main.js": "/algebra-zavrsni/static/js/main.db95dff6.js",
+    "index.html": "/algebra-zavrsni/index.html",
+    "main.32f3f9d4.css.map": "/algebra-zavrsni/static/css/main.32f3f9d4.css.map",
+    "main.db95dff6.js.map": "/algebra-zavrsni/static/js/main.db95dff6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32f3f9d4.css",
+    "static/js/main.db95dff6.js"
+  ]
+}
