@@ -10,7 +10,7 @@ const Login = (props) =>{
     const handleSubmit = (e)=>{
         e.preventDefault();
         props.onLogin(usernameText);
-        navigate("/");        
+        navigate("/algebra-zavrsni/");        
     }
     
     return (
