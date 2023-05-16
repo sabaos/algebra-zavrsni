@@ -13,7 +13,12 @@ const Header = (props) =>{
 
       {!isLoggedIn &&  <div className="App-header">
         <div></div>
+<<<<<<< Updated upstream
         <h1>Chat Application</h1>
+=======
+        <img src={require('./img/chatty_icon.png')} height="50px"/>
+        <h1>Chatty</h1>
+>>>>>>> Stashed changes
         {/* Prazan div služi za flex pozicioniranje elemenata */}
         <div></div>
       </div>}

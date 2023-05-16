@@ -3,6 +3,7 @@ import React from 'react';
 import Input from "./Input";
 import Sidebar from './Sidebar';
 import "./Chat.css";
+import Header from './Header';
 
 function randomName() {
  const adjectives = ["autumn", "hidden", "bitter", "Pero", "silent", "empty", "dry", "dark", "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter", "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue", "billowing", "broken", "cold", "damp", "falling", "frosty", "green", "long", "late", "lingering", "bold", "little", "morning", "muddy", "old", "red", "rough", "still", "small", "sparkling", "throbbing", "shy", "wandering", "withered", "wild", "black", "young", "holy", "solitary", "fragrant", "aged", "snowy", "proud", "floral", "restless", "divine", "polished", "ancient", "purple", "lively", "nameless"];
