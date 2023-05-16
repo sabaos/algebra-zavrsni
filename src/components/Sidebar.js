@@ -24,12 +24,12 @@ class Sidebar extends React.Component{
             <div className={`sidebar ${isOpen === true ? "active" : ""}`}>
                 <div className="sd-header">
                     <h4>Sidebar Header</h4>
-                    <div className="btn btn-primary" onClick={this.ToggleSidebar}>Zatvori</div>
+                    <div className="btn btn-primary" onClick={this.ToggleSidebar}>Close Sidebar</div>
                 </div>
                 <div className="sd-body">
                     <ul>
-                        <li><Link to="/" className="sd-link">Chat</Link></li>
-                        <li><Link to="/about" className="sd-link">About</Link></li>
+                        <li><Link to="/algebra-seminar/" className="sd-link">Chat</Link></li>
+                        <li><Link to="/algebra-seminar/about" className="sd-link">About</Link></li>
                     </ul>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import "../components/style.css"
 
 const Login = (props) =>{
     const [usernameText, setUsernameText] = useState("");
@@ -10,26 +9,25 @@ const Login = (props) =>{
     const handleSubmit = (e)=>{
         e.preventDefault();
         props.onLogin(usernameText);
-        navigate("/");        
+        navigate("/algebra-seminar/");        
     }
     
     return (
-    <div className="background">
-    <div className="container ">
+      
+    <div className="container">
         <form className="login-form" onSubmit={handleSubmit}>
             <label htmlFor="title">
-                <h1 className="caps">Login</h1>
+                <h1>Login</h1>
             </label>
-            <input className="user-name"
+            <input 
             id="title"
             type="text" 
             placeholder="Enter your username" 
             required 
             value={usernameText} 
             onChange={(e)=> setUsernameText(e.target.value)}/>
-            <button className="button">Login</button>
+            <button className="login-btn">Login</button>
         </form>
-    </div>
     </div>)
 }
 
