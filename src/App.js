@@ -33,14 +33,14 @@ class App extends React.Component{
          <Header toggleSidebar={this.toggleSidebar} username={this.state.username} handleLogout={this.handleLogout} /> 
          <Sidebar ref={(reference)=> this.sidebar = reference}/> 
           <Routes>
-              <Route path="/algebra-seminar/" 
+              <Route path="/algebra-zavrsni/" 
                 element={ this.state.username ? <Chat username={this.state.username}/> : 
-                  <Navigate to="/algebra-seminar/login" />} />
-              <Route path="/algebra-seminar/login" element={<Login onLogin={this.handleLogin} 
+                  <Navigate to="/algebra-zavrsni/login" />} />
+              <Route path="/algebra-zavrsni/login" element={<Login onLogin={this.handleLogin} 
                   username={this.state.username}/>} />
-              <Route path="/algebra-seminar/about" 
+              <Route path="/algebra-zavrsni/about" 
                 element={this.state.username ? <About />: 
-                  <Navigate to="/algebra-seminar/login" /> } />
+                  <Navigate to="/algebra-zavrsni/login" /> } />
             </Routes>
     </div>
     )
