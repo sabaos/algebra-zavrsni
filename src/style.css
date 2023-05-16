@@ -5,7 +5,6 @@
     background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 margin: 0;
-height: 100%;
 }
 h1{font-family: 'Noto Sans', sans-serif;
     font-weight: 800;
@@ -39,4 +38,10 @@ h1{font-family: 'Noto Sans', sans-serif;
     border:none;
     padding: 8px 30px;
     border-radius: 40px;
+}
+.user-login-name{
+    font-size: 16px;
+    border-radius: 30px;
+    border: ;
+    flex-grow: 1;
 }

@@ -22,7 +22,7 @@ const Login = (props) =>{
             <input 
             id="title"
             type="text" 
-            placeholder="Enter your username" 
+            placeholder="Unesite Vaše ime" 
             required 
             value={usernameText} 
             onChange={(e)=> setUsernameText(e.target.value)}/>
