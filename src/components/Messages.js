@@ -1,5 +1,6 @@
 import {Component} from "react";
 import React from "react";
+import Randomstring from "randomstring";
 
 class Messages extends Component {
   render() {
@@ -27,7 +28,7 @@ class Messages extends Component {
           <div className="username">
             {member.clientData.username}
           </div>
-          <div className="text">{text}</div>
+          <div className="text">{Randomstring}</div>
         </div>
       </li>
     );
