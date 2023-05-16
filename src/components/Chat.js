@@ -64,13 +64,18 @@ class Chat extends React.Component {
         messages={this.state.messages}
         currentMember={this.state.member}
       />
+    
+      
       <Input onSendMessage={this.onSendMessage}/>
+      
     </div>
+    
     );
   }
   
 
 
 }
+
 
 export default Chat;
