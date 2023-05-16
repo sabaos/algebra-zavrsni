@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Login from "./components/Login";
 import Sidebar from "./components/Sidebar";
 import "./App.css";
+import "./style.css";
 
 class App extends React.Component{
 
