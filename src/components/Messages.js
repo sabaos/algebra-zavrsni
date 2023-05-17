@@ -18,7 +18,7 @@ class Messages extends Component {
     const className = messageFromMe ?
       "Messages-message currentMember" : "Messages-message";
     return (
-      <li className={className} key={text + "_" + new Date().getTime().toString()}>
+      <li className={className} key={Math.random()}>
       <span
         className="avatar"
         style={{backgroundColor: member.clientData.color}}
@@ -27,11 +27,15 @@ class Messages extends Component {
           <div className="username">
             {member.clientData.username}
           </div>
-          <div className="text">{text}</div>
+          <div className="text">{text}
+         
+          </div>
         </div>
       </li>
     );
   }
+  
 }
+
 
 export default Messages;
