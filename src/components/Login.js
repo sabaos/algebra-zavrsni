@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
+import "../style.css";
 
 const Login = (props) =>{
     const [usernameText, setUsernameText] = useState("");
@@ -26,7 +27,7 @@ const Login = (props) =>{
             required 
             value={usernameText} 
             onChange={(e)=> setUsernameText(e.target.value)}/>
-            <button className="login-btn">Login</button>
+            <button className="button">Login</button>
         </form>
     </div>)
 }
