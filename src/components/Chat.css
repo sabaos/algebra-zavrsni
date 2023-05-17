@@ -11,6 +11,9 @@
     width: 100%;
     color: white;
     display: flex;
+    flex-direction:row;
+    align-content: center;
+    align-items: center;
     justify-content: space-between;
     
   }

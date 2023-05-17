@@ -54,3 +54,9 @@ h1{font-family: 'Noto Sans', sans-serif;
 .img-height{
     height: 100px;
 }
+
+.left-section{
+    padding-left: 30px;
+       width: 100px;
+
+}
