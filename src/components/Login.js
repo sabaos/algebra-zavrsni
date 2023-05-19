@@ -16,11 +16,12 @@ const Login = (props) =>{
     return (
       
     <div className="container">
+        
         <form className="login-form" onSubmit={handleSubmit}>
             <label htmlFor="title">
-                <h1>Login</h1>
+            <img src={require('./img/chatty_icon_white.png')} className='img-height'></img>
             </label>
-            <input 
+            <input className="login-input" 
             id="title"
             type="text" 
             placeholder="Unesite Vaše ime" 

@@ -6,21 +6,20 @@ const Header = (props) =>{
         {/* Prazan react fragment, služi istu svrhu kao i div, ali manje opterećuje DOM */}
         {isLoggedIn && 
         <div className="App-header">
-          <div className='left-section' ><img src={require('./img/chatty_icon.png')} className='img-height'></img>
-          <h1>Chatty</h1>
-          <p>{props.username}</p></div>
+          <div className='left-section' >
+          <div className='logo-section' >
+            <img src={require('./img/chatty_icon.png')} className='img-height'></img>
+            <h1>Chatty</h1>
+            </div>
+            <div className='user-section'><p>Korisnik:</p> <p className='username'>{props.username}</p></div>
+        </div>
         <div className='right-section'>
-          <button className='sidebar-btn' onClick={props.toggleSidebar}>Izbornik</button>
-          <button onClick={props.handleLogout}>Logout</button>
+          <button  onClick={props.toggleSidebar}>Izbornik</button>
+          <button  onClick={props.handleLogout}>Logout</button>
         </div>
       </div>}
 
-      {!isLoggedIn &&  <div className="App-header">
-        <div></div>
-        <h1>Chatty</h1>
-        {/* Prazan div služi za flex pozicioniranje elemenata */}
-        <div></div>
-      </div>}
+    
       </>
     )
 }

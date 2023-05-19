@@ -91,19 +91,17 @@
     border-radius: 30px;
     border: 0px;
     flex-grow: 1;
+    
+  }
+
+  input .button {
+    margin-left: 20px;
   }
   input:focus{
     border: 0px;
     background-color: lightblue;
   }
-  
-  button {
-    padding: 5px 10px;
-    font-size: 16px;
-    background-color: orangered;
-    color: white;
-    border: none;
-  }
+
   .btn-send{
     border-radius: 8px;
     margin-left: 10px;

@@ -15,12 +15,12 @@
   background-color: #fff;
   position: fixed;
   top: 0;
-  left: -100%;
+  right: -100%;
   z-index: 1;
   transition: 0.5s;
 }
 .sidebar.active {
-  left: 0;
+  right: 0;
 }
 .sd-header {
   display: flex;
