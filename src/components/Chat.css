@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90vh;
+    height: 80vh;
   }
   
   .App-header {
@@ -19,14 +19,16 @@
   }
   
   .Messages-list {
-    padding: 20px 0;
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
     list-style: none;
-    padding-left: 0;
+    padding: 10px 0px;
     flex-grow: 1;
     overflow: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
   }
   
   .Messages-message {
