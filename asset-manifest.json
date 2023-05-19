@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/algebra-zavrsni/static/css/main.2f1eefdf.css",
-    "main.js": "/algebra-zavrsni/static/js/main.150e4406.js",
+    "main.css": "/algebra-zavrsni/static/css/main.62c0af81.css",
+    "main.js": "/algebra-zavrsni/static/js/main.7c657c23.js",
     "index.html": "/algebra-zavrsni/index.html",
-    "main.2f1eefdf.css.map": "/algebra-zavrsni/static/css/main.2f1eefdf.css.map",
-    "main.150e4406.js.map": "/algebra-zavrsni/static/js/main.150e4406.js.map"
+    "main.62c0af81.css.map": "/algebra-zavrsni/static/css/main.62c0af81.css.map",
+    "main.7c657c23.js.map": "/algebra-zavrsni/static/js/main.7c657c23.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f1eefdf.css",
-    "static/js/main.150e4406.js"
+    "static/css/main.62c0af81.css",
+    "static/js/main.7c657c23.js"
   ]
 }
